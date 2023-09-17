@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Leer el archivo CSV en un DataFrame
-df = pd.read_csv("./data/RPT_RA_11_NOTAS_FINALES_POR_PERIODO_22020.csv")
+df = pd.read_csv("./data/RPT_RA_11_NOTAS_FINALES_POR_PERIODO_22021.csv")
 
 #Eliminar columnas con data no manipunable
 def eliminar_columna_textbox16(df):
@@ -83,7 +83,7 @@ df = renombrar_columna_textbox52(df)
 df = renombrar_columna_textbox54(df)
 df = renombrar_columna_textbox56(df)
 # Ruta y nombre del nuevo archivo CSV
-archivo_csv = 'DATA_NORMALIZADA/RPT_RA_11_notas_finales_por_perido_2022.csv'
+archivo_csv = 'DATA_NORMALIZADA/RPT_RA_11_NOTAS_FINALES_POR_PERIODO_22021.csv'
 
 # Crear la carpeta si no existe
 carpeta = os.path.dirname(archivo_csv)
